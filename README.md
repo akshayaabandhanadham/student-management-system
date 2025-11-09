@@ -19,8 +19,8 @@
 
 ```bash
 # Clone the repository
-git clone <repo-url> genesis-student-manager
-cd genesis-student-manager
+git clone <repo-url> Student Management System
+cd Student Management System
 
 # Create and activate virtual environment (Unix)
 python -m venv .venv
