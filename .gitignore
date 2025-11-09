@@ -1,8 +1,19 @@
+# Python & env
+.venv/
 __pycache__/
 *.pyc
-instance/
-.env
-data/gs_manager.db
+*.pyo
+
+# Database files
+data/
+*.sqlite3
+*.db
+
+# IDE / OS
 .vscode/
 .idea/
-*.sqlite3
+Thumbs.db
+.DS_Store
+
+# env files
+.env
