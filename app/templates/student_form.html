@@ -1,0 +1,32 @@
+<!-- app/templates/student_form.html -->
+{% extends "base.html" %}
+{% block content %}
+  <h2>{{ action }} Student</h2>
+  <form method="post" class="form">
+    <label>
+      Enrollment No
+      <input name="enrollment_no" required value="{{ student.enrollment_no if student else '' }}">
+    </label>
+    <label>
+      First name
+      <input name="first_name" required value="{{ student.first_name if student else '' }}">
+    </label>
+    <label>
+      Last name
+      <input name="last_name" value="{{ student.last_name if student else '' }}">
+    </label>
+    <label>
+      Email
+      <input name="email" type="email" value="{{ student.email if student else '' }}">
+    </label>
+    <label>
+      Course
+      <input name="course" value="{{ student.course if student else '' }}">
+    </label>
+
+    <div class="form-actions">
+      <button class="btn" type="submit">{{ action }}</button>
+      <a class="btn muted" href="{{ url_for('index') }}">Cancel</a>
+    </div>
+  </form>
+{% endblock %}

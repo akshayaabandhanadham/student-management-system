@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+instance/
+.env
+data/gs_manager.db
+.vscode/
+.idea/
+*.sqlite3

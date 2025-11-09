@@ -1,0 +1,53 @@
+/* app/static/style.css - minimal clean styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f8fb;
+  margin: 0;
+  color: #222;
+}
+.container {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.site-header {
+  background: #1f6feb;
+  color: white;
+  padding: 12px 0;
+}
+.site-header a { color: white; text-decoration: none; }
+.site-footer { text-align: center; padding: 12px 0; color: #666; margin-top: 36px; }
+
+.btn {
+  background: #1f6feb;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.btn.muted { background: #777; }
+.linkish {
+  background: none;
+  border: none;
+  color: #1f6feb;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  font: inherit;
+}
+.table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+.table th, .table td { border: 1px solid #e0e6f0; padding: 8px; text-align: left; }
+.form { display: grid; gap: 8px; max-width: 560px; }
+.form label { display: flex; flex-direction: column; font-size: 14px; }
+.form input { padding: 8px; border: 1px solid #ccd6ee; border-radius: 4px; }
+.toolbar { margin-bottom: 12px; }
+.flash-area { margin: 12px 0; }
+.flash { padding: 8px; border-radius: 6px; margin-bottom: 8px; }
+.flash.success { background: #e6fbf1; color: #046a38; }
+.flash.danger { background: #ffe6e6; color: #8b0000; }
+.flash.warning { background: #fff4e6; color: #8a5a00; }
+.detail-list dt { font-weight: bold; }
+.detail-list dd { margin: 0 0 8px 0; }
+.form-actions { margin-top: 12px; display: flex; gap: 8px; align-items: center; }

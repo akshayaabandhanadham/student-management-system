@@ -1,0 +1,20 @@
+<!-- app/templates/student_detail.html -->
+{% extends "base.html" %}
+{% block content %}
+  <h2>Student: {{ student.first_name }} {{ student.last_name or '' }}</h2>
+  <dl class="detail-list">
+    <dt>ID</dt><dd>{{ student.id }}</dd>
+    <dt>Enrollment No</dt><dd>{{ student.enrollment_no }}</dd>
+    <dt>Course</dt><dd>{{ student.course or '-' }}</dd>
+    <dt>Email</dt><dd>{{ student.email or '-' }}</dd>
+    <dt>Created</dt><dd>{{ student.created_at }}</dd>
+    <dt>Updated</dt><dd>{{ student.updated_at }}</dd>
+  </dl>
+  <div class="form-actions">
+    <a class="btn" href="{{ url_for('edit_student', student_id=student.id) }}">Edit</a>
+    <form action="{{ url_for('delete_student', student_id=student.id) }}" method="post" style="display:inline" onsubmit="return confirm('Delete student?');">
+      <button class="btn muted" type="submit">Delete</button>
+    </form>
+    <a class="btn muted" href="{{ url_for('index') }}">Back</a>
+  </div>
+{% endblock %}
