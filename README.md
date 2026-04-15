@@ -1,6 +1,8 @@
 # Student Management System
 
  Student Management System is a lightweight, production-minded student management web application written in Python using Flask and SQLAlchemy. It provides full CRUD operations (Create, Read, Update, Delete) for student records and demonstrates a clear separation of concerns (database, repository, service, controllers) and simple UI templates.
+ ## 🎥 Execution Video
+[Watch Project Execution](https://drive.google.com/file/d/1rYd8H_FUHgEZntkoSDJ_PjmwXd5lRi6T/view?usp=sharing)
 
 ## Features
 - Create, list, view, edit and delete student records
